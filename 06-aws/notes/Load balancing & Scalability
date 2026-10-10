@@ -1,1 +1,19 @@
+# Load balancing & Scalability
 
+## Key Concepts
+
+- Vertical Scalability - More power, e.g. more cpu
+- Horizontal Scalability - Add more instance of a resource e.g. add more servers (elasticity)
+- Point 2
+
+## Commands
+
+`command` - what it does
+
+## Examples
+
+(code examples)
+
+## What I Learned
+
+(your own summary)

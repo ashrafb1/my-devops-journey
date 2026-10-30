@@ -29,7 +29,6 @@ When creating a new note, you can use this structure:
 
 ## Your Notes
 
-- [ 
 # Shebang
 
 ## Key Concepts
@@ -48,6 +47,6 @@ When creating a new note, you can use this structure:
 ## What I Learned
 
 (your own summary)
-] Add your first note
+
 - [ ] 
 

@@ -39,13 +39,6 @@ When creating a new note, you can use this structure:
 
 `#!/bin/bash` - Tells the interpreter that you are writing/running a bash script
 
-## Examples
-
-
-## What I Learned
-
-(your own summary)
-
 # IF statements
 
 ## Key Concepts
@@ -83,5 +76,64 @@ then
     echo "Good!"
 else 
     echo "Better luck next time!"
+
+# While Loop
+
+## Key Concepts
+
+- useful to iterate through arrays, file and automation for iterative operations
+
+while condition
+do
+  code block
+done
+
+## Commands
+
 fi
+
+## Example
+fruits=("apple" "banana" "orange")
+index=0
+
+while [ $index -lt ${#fruits[@]} ]  -the "#" is for the number in array and "@" all elements in array
+do
+    echo "Fruit: ${fruits[$index]}"
+    ((index++))
+done
+
+# For loop
+
+## Key Concepts
+
+- Iterate through sequence or range of values
+
+for variable in sequence
+do
+  code to be executed
+done
+
+## Examples
+
+for (( i=1; i<=5; i++ ))
+do
+    echo "Number: $i"
+done
+
+# Break and continue
+
+## Key Concepts
+-break immediatly exits inner most loop
+-continue skips to the next iteration
+
+## Examples
+for (( i=1; i<=5; i++ ))
+do
+    if [ $i -eq 3 ]
+    then    
+        break/continue
+    fi
+    echo "Number: $i"
+done
+
 

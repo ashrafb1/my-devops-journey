@@ -136,4 +136,28 @@ do
     echo "Number: $i"
 done
 
+# Functions
+
+## Key Concepts
+-function_name() {
+    # code to be executed
+}
+
+- "$#" - count of arguments passed to a functions
+- $0 - contains name of script
+- $@ - all arguments
+
+
+## Examples
+
+hello_world() {
+    echo "Hello, World!"
+}
+
+hello_world
+
+## Command
+read name - takes in and input it is followed by a variable where input is stored
+
+
 

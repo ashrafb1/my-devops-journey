@@ -159,5 +159,41 @@ hello_world
 ## Command
 read name - takes in and input it is followed by a variable where input is stored
 
+# Error Handling
+
+## Key Concepts
+- Meaning error messaging without stopping the script from crashing
+
+## Commands
+- Discarding of an error "2>/dev/nulll"
+- set -e (stops script at error)
+- set -u (forces script to stop at uninitialised variable)
+- set -x (prints each command before it is executed)
+- set +x will no longer use the error handling
+- You can use all flags at once (set -eux)
+- set -o nounset same as -u
+- set -o errexit same as -e
+- set -o pipefail return last command in pipeline
+
+## Example
+num1=10
+num2=0
+
+if [ $num2 -eq 0 ]; then 
+    echo "Error: Division by zero is not allowed"
+    exit 1
+fi
+
+result=$((num1 / num2))
+
+echo "The result is: $result"
+
+
+
+
+
+
+
+
 
 
